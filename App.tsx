@@ -4,7 +4,7 @@ import * as TCServerSide from 'tcserverside-react-native';
 import {TCDevice, TCApp} from 'tcserverside-react-native';
 import {TCBeginCheckoutEvent} from 'tcserverside-react-native';
 import {TCUser} from "tccore-react-native";
-
+import * as TCConsent from 'tcconsent-react-native';
 
 function test()
 {
@@ -21,10 +21,44 @@ export default function App() {
   );
 }
 
+async function initialiseTCConsent()
+{
+  await TCConsent.setSiteIDPrivacyID(3311, 2929)
+}
+
+function printTCUser()
+{
+  console.log(TCUser.getInstance().anonymous_id)
+}
+
 const ButtonRow = () => {
 
   return (
   <View style={styles.container}>
+    <TouchableOpacity
+      style={styles.consentButton}
+      onPress={initialiseTCConsent}>
+      <Text style={styles.buttonText}>Re-init TCConsent</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity
+      style={styles.consentButton}
+      onPress={printTCUser}>
+      <Text style={styles.buttonText}>Print TCUser anonymous_id</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity
+      style={styles.consentButton}
+      onPress={TCConsent.acceptAllConsent}>
+      <Text style={styles.buttonText}>acceptAllConsent</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity
+      style={styles.consentButton}
+      onPress={TCConsent.refuseAllConsent}>
+      <Text style={styles.buttonText}>refuseAllConsent</Text>
+    </TouchableOpacity>
+
     <TouchableOpacity
       style={styles.button}
       onPress={() => TCServerSide.initServerSide(3311, 'a_source_key')}>
@@ -193,6 +227,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 8,
+    marginTop: 64
   },
   button: {
     backgroundColor: 'blue',
@@ -204,5 +239,12 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 16,
+  },
+  consentButton: {
+    backgroundColor: 'purple',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    marginVertical: 10,
   },
 });

@@ -11,7 +11,8 @@
     "react-native": "0.72.4",
     "RNImagePreview": "https://github.com/GantMan/RNImagePreview.git#master",
     "tccore-react-native": "git+https://github.com/saidahakim21/tccore-react-native#legacy_code",
-    "tcserverside-react-native": "git+https://gitlab.tagcommander.com/mobile/tcserverside-react-native#separate_module"
+    "tcserverside-react-native": "git+https://gitlab.tagcommander.com/mobile/tcserverside-react-native#separate_module",
+    "tcconsent-react-native": "git+https://gitlab.tagcommander.com/mobile/tcconsent-react-native#master"
   },
   "devDependencies": {
     "metro-config": "^0.78.1",

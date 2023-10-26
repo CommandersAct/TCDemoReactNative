@@ -73,7 +73,7 @@ PODS:
   - hermes-engine (0.72.4):
     - hermes-engine/Pre-built (= 0.72.4)
   - hermes-engine/Pre-built (0.72.4)
-  - IOSV5-TCCore (5.2.5)
+  - IOSV5-TCCore (5.3.1)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
@@ -487,21 +487,33 @@ PODS:
     - React-logger (= 0.72.4)
     - React-perflogger (= 0.72.4)
   - SocketRocket (0.6.1)
+  - tcconsent-react-native (1.0.0):
+    - IOSV5-TCCore (= 5.3.1)
+    - React-Core
+    - TCConsent_IAB (= 5.1.9)
+    - TCIAB (= 5.0.1)
+  - tcconsent-react-native-swift (1.0.0):
+    - IOSV5-TCCore (= 5.3.1)
+    - tcconsent-react-native
+    - TCConsent_IAB (= 5.1.9)
+    - TCIAB (= 5.0.1)
+  - TCConsent_IAB (5.1.9)
   - tccore-react-native (0.1.2):
-    - IOSV5-TCCore (= 5.2.5)
+    - IOSV5-TCCore (= 5.3.1)
     - React-Core
   - tccore-react-native-swift (1.0.0):
-    - IOSV5-TCCore (= 5.2.5)
+    - IOSV5-TCCore (= 5.3.1)
     - tccore-react-native
+  - TCIAB (5.0.1)
   - tcserverside-react-native (0.1.2):
-    - IOSV5-TCCore (= 5.2.5)
+    - IOSV5-TCCore (= 5.3.1)
     - React-Core
-    - TCServerSide_noIDFA (= 5.3.2)
+    - TCServerSide_noIDFA (= 5.4.1)
   - tcserverside-react-native-swift (1.0.0):
-    - IOSV5-TCCore (= 5.2.5)
+    - IOSV5-TCCore (= 5.3.1)
     - tcserverside-react-native
-    - TCServerSide_noIDFA (= 5.3.2)
-  - TCServerSide_noIDFA (5.3.2)
+    - TCServerSide_noIDFA (= 5.4.1)
+  - TCServerSide_noIDFA (5.4.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -569,6 +581,8 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - tcconsent-react-native (from `../node_modules/tcconsent-react-native`)
+  - tcconsent-react-native-swift (from `../node_modules/tcconsent-react-native/tcconsent-react-native-swift.podspec`)
   - tccore-react-native (from `../node_modules/tccore-react-native`)
   - tccore-react-native-swift (from `../node_modules/tccore-react-native/tccore-react-native-swift.podspec`)
   - tcserverside-react-native (from `../node_modules/tcserverside-react-native`)
@@ -591,6 +605,8 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - TCConsent_IAB
+    - TCIAB
     - TCServerSide_noIDFA
     - YogaKit
 
@@ -672,6 +688,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  tcconsent-react-native:
+    :path: "../node_modules/tcconsent-react-native"
+  tcconsent-react-native-swift:
+    :path: "../node_modules/tcconsent-react-native/tcconsent-react-native-swift.podspec"
   tccore-react-native:
     :path: "../node_modules/tccore-react-native"
   tccore-react-native-swift:
@@ -700,7 +720,7 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 81191603c4eaa01f5e4ae5737a9efcf64756c7b2
-  IOSV5-TCCore: b61f1d00e57ace7c9b4a3b7f53639e531a3d42b8
+  IOSV5-TCCore: 90a7566019c2b2a8a9d650978572e00a9e7f9604
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
@@ -736,14 +756,18 @@ SPEC CHECKSUMS:
   React-utils: b79f2411931f9d3ea5781404dcbb2fa8a837e13a
   ReactCommon: 4b2bdcb50a3543e1c2b2849ad44533686610826d
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  tccore-react-native: 0065c34e34c0a0596cf639d8aa88547adfb75aac
-  tccore-react-native-swift: 28ddc1a4073b19984569ad85c55cb133cc8d94a1
-  tcserverside-react-native: a1e72ba093a22bab6a2fd92f40fba01b6c32deed
-  tcserverside-react-native-swift: f5a70029b74b6401738574a7d93e4082fd031b03
-  TCServerSide_noIDFA: 650725ae81e54c592421cec62ca974c10fd33a7e
+  tcconsent-react-native: 09f8822e06bd349c9ee1d825d192e89c69501ef2
+  tcconsent-react-native-swift: e429208e1c90adde9d98f0eba617171fe3ba2617
+  TCConsent_IAB: 110677490d01bcf9ae0695ddb953bfc065bae288
+  tccore-react-native: 857c4dcdbe7fa9ab0f9dee47d67334ee09cc041e
+  tccore-react-native-swift: 452f4aa4573d8cc69606061389d24ee4649e272e
+  TCIAB: f0243220c47922012cdc122818773e09c8f5f21d
+  tcserverside-react-native: 538dae2dc844e3020769d97606eff5723ec03e5a
+  tcserverside-react-native-swift: b62de72961134ad229f93347d382b283901469b4
+  TCServerSide_noIDFA: 8f17b177d07f4f7d4342c38e847e774588dbd5d1
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: d557faed436cdc9887378af13eac75a45c1b1172
+PODFILE CHECKSUM: 461fdbd93aff0610f3608c9e38d8c9f68e33272e
 
 COCOAPODS: 1.12.1
