@@ -487,29 +487,29 @@ PODS:
     - React-logger (= 0.72.4)
     - React-perflogger (= 0.72.4)
   - SocketRocket (0.6.1)
-  - tcconsent-react-native (1.0.0):
+  - tcconsent-react-native (1.2.1):
     - IOSV5-TCCore (= 5.3.1)
     - React-Core
     - TCConsent_IAB (= 5.1.9)
     - TCIAB (= 5.0.1)
-  - tcconsent-react-native-swift (1.0.0):
+  - tcconsent-react-native-swift (1.2.1):
     - IOSV5-TCCore (= 5.3.1)
     - tcconsent-react-native
     - TCConsent_IAB (= 5.1.9)
     - TCIAB (= 5.0.1)
   - TCConsent_IAB (5.1.9)
-  - tccore-react-native (0.1.2):
+  - tccore-react-native (1.1.1):
     - IOSV5-TCCore (= 5.3.1)
     - React-Core
-  - tccore-react-native-swift (1.0.0):
+  - tccore-react-native-swift (1.1.1):
     - IOSV5-TCCore (= 5.3.1)
     - tccore-react-native
   - TCIAB (5.0.1)
-  - tcserverside-react-native (0.1.2):
+  - tcserverside-react-native (1.1.1):
     - IOSV5-TCCore (= 5.3.1)
     - React-Core
     - TCServerSide_noIDFA (= 5.4.1)
-  - tcserverside-react-native-swift (1.0.0):
+  - tcserverside-react-native-swift (1.1.1):
     - IOSV5-TCCore (= 5.3.1)
     - tcserverside-react-native
     - TCServerSide_noIDFA (= 5.4.1)
@@ -756,14 +756,14 @@ SPEC CHECKSUMS:
   React-utils: b79f2411931f9d3ea5781404dcbb2fa8a837e13a
   ReactCommon: 4b2bdcb50a3543e1c2b2849ad44533686610826d
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  tcconsent-react-native: 09f8822e06bd349c9ee1d825d192e89c69501ef2
-  tcconsent-react-native-swift: e429208e1c90adde9d98f0eba617171fe3ba2617
+  tcconsent-react-native: 7fa1636969a98c8c78b2fd3eedd3974590246eca
+  tcconsent-react-native-swift: fc3f3e1eca8d79f12ae91440cd737066edbd3851
   TCConsent_IAB: 110677490d01bcf9ae0695ddb953bfc065bae288
-  tccore-react-native: 857c4dcdbe7fa9ab0f9dee47d67334ee09cc041e
-  tccore-react-native-swift: 452f4aa4573d8cc69606061389d24ee4649e272e
+  tccore-react-native: daab19cbb4ac9a548aa76dfd069e07a5640f25b1
+  tccore-react-native-swift: e2fcc09a78eb26681c259a3945ae7e68e3e8992c
   TCIAB: f0243220c47922012cdc122818773e09c8f5f21d
-  tcserverside-react-native: 538dae2dc844e3020769d97606eff5723ec03e5a
-  tcserverside-react-native-swift: b62de72961134ad229f93347d382b283901469b4
+  tcserverside-react-native: 60cc1e3659d8d3be4df9ffcff2db1ce053651624
+  tcserverside-react-native-swift: 5750bf928ced6e0cb6cef63577bb4038eba558bf
   TCServerSide_noIDFA: 8f17b177d07f4f7d4342c38e847e774588dbd5d1
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a

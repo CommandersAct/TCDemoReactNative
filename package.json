@@ -10,9 +10,9 @@
     "@react-native/metro-config": "^0.72.11",
     "react-native": "0.72.4",
     "RNImagePreview": "https://github.com/GantMan/RNImagePreview.git#master",
-    "tccore-react-native": "git+https://github.com/commandersact/tccore-react-native#1.1.0",
-    "tcserverside-react-native": "git+https://github.com/commandersact/tcserverside-react-native#1.1.0",
-    "tcconsent-react-native": "git+https://github.com/commandersact/tcconsent-react-native#1.1.0"
+    "tccore-react-native": "git+https://github.com/commandersact/tccore-react-native#1.1.1",
+    "tcserverside-react-native": "git+https://github.com/commandersact/tcserverside-react-native#1.1.1",
+    "tcconsent-react-native": "git+https://github.com/commandersact/tcconsent-react-native#1.2.1"
   },
   "devDependencies": {
     "metro-config": "^0.78.1",
