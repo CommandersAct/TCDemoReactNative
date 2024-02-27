@@ -487,24 +487,21 @@ PODS:
     - React-logger (= 0.72.4)
     - React-perflogger (= 0.72.4)
   - SocketRocket (0.6.1)
-  - tcconsent-react-native (1.2.1):
+  - TCConsent (5.1.9)
+  - tcconsent-react-native (1.3.1):
     - IOSV5-TCCore (= 5.3.1)
     - React-Core
-    - TCConsent_IAB (= 5.1.9)
-    - TCIAB (= 5.0.1)
-  - tcconsent-react-native-swift (1.2.1):
+    - TCConsent (= 5.1.9)
+  - tcconsent-react-native-swift (1.3.1):
     - IOSV5-TCCore (= 5.3.1)
+    - TCConsent (= 5.1.9)
     - tcconsent-react-native
-    - TCConsent_IAB (= 5.1.9)
-    - TCIAB (= 5.0.1)
-  - TCConsent_IAB (5.1.9)
-  - tccore-react-native (1.1.1):
+  - tccore-react-native (1.2.0):
     - IOSV5-TCCore (= 5.3.1)
     - React-Core
-  - tccore-react-native-swift (1.1.1):
+  - tccore-react-native-swift (1.2.0):
     - IOSV5-TCCore (= 5.3.1)
     - tccore-react-native
-  - TCIAB (5.0.1)
   - tcserverside-react-native (1.1.1):
     - IOSV5-TCCore (= 5.3.1)
     - React-Core
@@ -581,12 +578,12 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - tcconsent-react-native (from `../node_modules/tcconsent-react-native`)
-  - tcconsent-react-native-swift (from `../node_modules/tcconsent-react-native/tcconsent-react-native-swift.podspec`)
-  - tccore-react-native (from `../node_modules/tccore-react-native`)
-  - tccore-react-native-swift (from `../node_modules/tccore-react-native/tccore-react-native-swift.podspec`)
-  - tcserverside-react-native (from `../node_modules/tcserverside-react-native`)
-  - tcserverside-react-native-swift (from `../node_modules/tcserverside-react-native/tcserverside-react-native-swift.podspec`)
+  - "tcconsent-react-native (from `../node_modules/@commandersact/tcconsent-react-native`)"
+  - "tcconsent-react-native-swift (from `../node_modules/@commandersact/tcconsent-react-native/tcconsent-react-native-swift.podspec`)"
+  - "tccore-react-native (from `../node_modules/@commandersact/tccore-react-native`)"
+  - "tccore-react-native-swift (from `../node_modules/@commandersact/tccore-react-native/tccore-react-native-swift.podspec`)"
+  - "tcserverside-react-native (from `../node_modules/@commandersact/tcserverside-react-native`)"
+  - "tcserverside-react-native-swift (from `../node_modules/@commandersact/tcserverside-react-native/tcserverside-react-native-swift.podspec`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -605,8 +602,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - TCConsent_IAB
-    - TCIAB
+    - TCConsent
     - TCServerSide_noIDFA
     - YogaKit
 
@@ -689,17 +685,17 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   tcconsent-react-native:
-    :path: "../node_modules/tcconsent-react-native"
+    :path: "../node_modules/@commandersact/tcconsent-react-native"
   tcconsent-react-native-swift:
-    :path: "../node_modules/tcconsent-react-native/tcconsent-react-native-swift.podspec"
+    :path: "../node_modules/@commandersact/tcconsent-react-native/tcconsent-react-native-swift.podspec"
   tccore-react-native:
-    :path: "../node_modules/tccore-react-native"
+    :path: "../node_modules/@commandersact/tccore-react-native"
   tccore-react-native-swift:
-    :path: "../node_modules/tccore-react-native/tccore-react-native-swift.podspec"
+    :path: "../node_modules/@commandersact/tccore-react-native/tccore-react-native-swift.podspec"
   tcserverside-react-native:
-    :path: "../node_modules/tcserverside-react-native"
+    :path: "../node_modules/@commandersact/tcserverside-react-native"
   tcserverside-react-native-swift:
-    :path: "../node_modules/tcserverside-react-native/tcserverside-react-native-swift.podspec"
+    :path: "../node_modules/@commandersact/tcserverside-react-native/tcserverside-react-native-swift.podspec"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -756,18 +752,17 @@ SPEC CHECKSUMS:
   React-utils: b79f2411931f9d3ea5781404dcbb2fa8a837e13a
   ReactCommon: 4b2bdcb50a3543e1c2b2849ad44533686610826d
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  tcconsent-react-native: 7fa1636969a98c8c78b2fd3eedd3974590246eca
-  tcconsent-react-native-swift: fc3f3e1eca8d79f12ae91440cd737066edbd3851
-  TCConsent_IAB: 110677490d01bcf9ae0695ddb953bfc065bae288
-  tccore-react-native: daab19cbb4ac9a548aa76dfd069e07a5640f25b1
-  tccore-react-native-swift: e2fcc09a78eb26681c259a3945ae7e68e3e8992c
-  TCIAB: f0243220c47922012cdc122818773e09c8f5f21d
+  TCConsent: 695f30b7c68b0a1c4f28110e7eb081be537da7c8
+  tcconsent-react-native: c4f4ca7d355636329a32ff37801aecbdb3bbb631
+  tcconsent-react-native-swift: a8488bddc97e5511aaf5de12d0f9f051884b18b9
+  tccore-react-native: a201501c9efe818fb81b38395b5050f39f906a93
+  tccore-react-native-swift: be8a0b01997cef5c6934fcb961b80049eb9931a9
   tcserverside-react-native: 60cc1e3659d8d3be4df9ffcff2db1ce053651624
   tcserverside-react-native-swift: 5750bf928ced6e0cb6cef63577bb4038eba558bf
   TCServerSide_noIDFA: 8f17b177d07f4f7d4342c38e847e774588dbd5d1
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 461fdbd93aff0610f3608c9e38d8c9f68e33272e
+PODFILE CHECKSUM: 91a666166c17dbc61ac418fb8a53d0e017d78152
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.3

@@ -1,17 +1,16 @@
 import * as React from 'react';
 import { StyleSheet, ScrollView, TouchableOpacity, Text, View } from 'react-native';
-import * as TCServerSide from 'tcserverside-react-native';
-import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from 'tcserverside-react-native';
-import {TCUserInstance} from "tccore-react-native";
-import * as TCConsent from 'tcconsent-react-native';
+import * as TCServerSide from '@commandersact/tcserverside-react-native';
+import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from '@commandersact/tcserverside-react-native';
+import {TCUserInstance} from "@commandersact/tccore-react-native";
+import * as TCConsent from '@commandersact/tcconsent-react-native';
 
-let mockConsent = new Map([
-  ['PRIVACY_CAT_1', '1'],
-  ['PRIVACY_CAT_2', '1'],
-  ['PRIVACY_CAT_3', '0'],
-  ['PRIVACY_VEN_1', '0'],
-  ['PRIVACY_CAT_2', '1'],
-]);
+let mockConsent: { [key: string]: string } = {
+  'PRIVACY_CAT_1': '1',
+  'PRIVACY_CAT_2': '1',
+  'PRIVACY_CAT_3': '0',
+  'PRIVACY_VEN_1': '0',
+};
 
 export default function App() {
   inialise()
@@ -104,6 +103,13 @@ const ButtonRow = () => {
           style={styles.consentButton}
           onPress={() => TCConsent.saveConsentFromConsentSourceWithPrivacyAction(mockConsent, TCConsent.ETCConsentSource.POP_UP, TCConsent.ETCConsentAction.SAVE)}>
           <Text style={styles.buttonText}>saveConsentFromConsentSourceWithPrivacyAction</Text>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity
+          style={styles.consentButton}
+          onPress={() => TCConsent.TCConsentAPI.getLastTimeConsentWasSaved()}>
+          <Text style={styles.buttonText}>GetLastTimeConsentWasSaved</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
