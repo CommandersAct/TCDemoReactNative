@@ -10,6 +10,10 @@ This is a demo app for implementing commandersAct's react-native bridges
 
 Main code is inside ./App.tsx file
 
+More importantly, you'll need to read the native documentation for full details.
+ * [Android](https://github.com/CommandersAct/Androidv5)
+ * [iOS](https://github.com/commandersact/iosv5)
+
 Initialization is done once the app is loaded : 
 
 ```js
