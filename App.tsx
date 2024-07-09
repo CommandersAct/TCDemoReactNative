@@ -13,7 +13,7 @@ let mockConsent: { [key: string]: string } = {
 };
 
 export default function App() {
-  inialise()
+  initialize()
   return (
     <View style={styles.appContainer}>
       <ButtonRow />
@@ -21,7 +21,7 @@ export default function App() {
   );
 }
 
-async function inialise()
+async function initialize()
 {
   TCConsent.setSiteIDPrivacyID(3311, 2929)
   TCServerSide.initServerSide(3311, 'a_source_key')
@@ -72,11 +72,6 @@ const ButtonRow = () => {
           style={styles.consentButton}
           onPress={() => TCConsent.useACString(true)}>
           <Text style={styles.buttonText}>useACString</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.consentButton}
-          onPress={() => TCConsent.customPCMSetSiteID(121,121)}>
-          <Text style={styles.buttonText}>Init with custom PC</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.consentButton}

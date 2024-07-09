@@ -73,7 +73,7 @@ PODS:
   - hermes-engine (0.72.4):
     - hermes-engine/Pre-built (= 0.72.4)
   - hermes-engine/Pre-built (0.72.4)
-  - IOSV5-TCCore (5.3.1)
+  - IOSV5-TCCore (5.4.0)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
@@ -487,30 +487,33 @@ PODS:
     - React-logger (= 0.72.4)
     - React-perflogger (= 0.72.4)
   - SocketRocket (0.6.1)
-  - TCConsent (5.1.9)
-  - tcconsent-react-native (1.3.1):
-    - IOSV5-TCCore (= 5.3.1)
+  - TCConsent (5.3.2)
+  - tcconsent-react-native (1.3.5):
+    - IOSV5-TCCore (= 5.4.0)
     - React-Core
-    - TCConsent (= 5.1.9)
-  - tcconsent-react-native-swift (1.3.1):
-    - IOSV5-TCCore (= 5.3.1)
-    - TCConsent (= 5.1.9)
+    - TCConsent (= 5.3.2)
+    - TCIAB (= 5.1.0)
+  - tcconsent-react-native-swift (1.3.5):
+    - IOSV5-TCCore (= 5.4.0)
+    - TCConsent (= 5.3.2)
     - tcconsent-react-native
-  - tccore-react-native (1.2.0):
-    - IOSV5-TCCore (= 5.3.1)
+    - TCIAB (= 5.1.0)
+  - tccore-react-native (1.2.3):
+    - IOSV5-TCCore (= 5.4.0)
     - React-Core
-  - tccore-react-native-swift (1.2.0):
-    - IOSV5-TCCore (= 5.3.1)
+  - tccore-react-native-swift (1.2.3):
+    - IOSV5-TCCore (= 5.4.0)
     - tccore-react-native
-  - tcserverside-react-native (1.1.1):
-    - IOSV5-TCCore (= 5.3.1)
+  - TCIAB (5.1.0)
+  - tcserverside-react-native (1.2.2):
+    - IOSV5-TCCore (= 5.4.0)
     - React-Core
-    - TCServerSide_noIDFA (= 5.4.1)
-  - tcserverside-react-native-swift (1.1.1):
-    - IOSV5-TCCore (= 5.3.1)
+    - TCServerSide_noIDFA (= 5.4.3)
+  - tcserverside-react-native-swift (1.2.2):
+    - IOSV5-TCCore (= 5.4.0)
     - tcserverside-react-native
-    - TCServerSide_noIDFA (= 5.4.1)
-  - TCServerSide_noIDFA (5.4.1)
+    - TCServerSide_noIDFA (= 5.4.3)
+  - TCServerSide_noIDFA (5.4.3)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -603,6 +606,7 @@ SPEC REPOS:
     - OpenSSL-Universal
     - SocketRocket
     - TCConsent
+    - TCIAB
     - TCServerSide_noIDFA
     - YogaKit
 
@@ -716,7 +720,7 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 81191603c4eaa01f5e4ae5737a9efcf64756c7b2
-  IOSV5-TCCore: 90a7566019c2b2a8a9d650978572e00a9e7f9604
+  IOSV5-TCCore: c8553e0df90cab10cc8bc4aa8c37baea452021b0
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
@@ -752,17 +756,18 @@ SPEC CHECKSUMS:
   React-utils: b79f2411931f9d3ea5781404dcbb2fa8a837e13a
   ReactCommon: 4b2bdcb50a3543e1c2b2849ad44533686610826d
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  TCConsent: 695f30b7c68b0a1c4f28110e7eb081be537da7c8
-  tcconsent-react-native: c4f4ca7d355636329a32ff37801aecbdb3bbb631
-  tcconsent-react-native-swift: a8488bddc97e5511aaf5de12d0f9f051884b18b9
-  tccore-react-native: a201501c9efe818fb81b38395b5050f39f906a93
-  tccore-react-native-swift: be8a0b01997cef5c6934fcb961b80049eb9931a9
-  tcserverside-react-native: 60cc1e3659d8d3be4df9ffcff2db1ce053651624
-  tcserverside-react-native-swift: 5750bf928ced6e0cb6cef63577bb4038eba558bf
-  TCServerSide_noIDFA: 8f17b177d07f4f7d4342c38e847e774588dbd5d1
+  TCConsent: 095b65ad42197786036c311f7fcdec279bd03a82
+  tcconsent-react-native: 6375f52ceacdc51523899e69c8cce863b7f26478
+  tcconsent-react-native-swift: 1a65b782b48a51abdef007b174ecdca0a3328485
+  tccore-react-native: 3293032359bfb6f5c6af46086e3b80042c79ea93
+  tccore-react-native-swift: 101b2121a8edbe8bce98f5a3eb4e57c71538dfde
+  TCIAB: f584a93c1c8e38f1deb245cc3c3fef367e32a3cf
+  tcserverside-react-native: 7965b33427e7a058460dfb80570e1743ca996972
+  tcserverside-react-native-swift: 862d956acdc3355dfae8bc36f1fd82c797590135
+  TCServerSide_noIDFA: 86a8ed5685a937190bbd0f8657834864eeaf6886
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
 PODFILE CHECKSUM: 91a666166c17dbc61ac418fb8a53d0e017d78152
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
