@@ -4,12 +4,20 @@ import * as TCServerSide from '@commandersact/tcserverside-react-native';
 import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from '@commandersact/tcserverside-react-native';
 import {TCUserInstance} from "@commandersact/tccore-react-native";
 import * as TCConsent from '@commandersact/tcconsent-react-native';
+import { TCUser } from '@commandersact/tccore-react-native/src/TCUser';
 
 let mockConsent: { [key: string]: string } = {
   'PRIVACY_CAT_1': '1',
   'PRIVACY_CAT_2': '1',
   'PRIVACY_CAT_3': '0',
   'PRIVACY_VEN_1': '0',
+};
+
+
+let mockVendorConsent: { [key: string]: string } = {
+  'PRIVACY_VEN_1': '0',
+  'PRIVACY_VEN_2': '1',
+  'PRIVACY_VEN_3': '0',
 };
 
 export default function App() {
@@ -65,7 +73,7 @@ const ButtonRow = () => {
 
         <TouchableOpacity
           style={styles.consentButton}
-          onPress={TCConsent.showPrivacyCenter}>
+          onPress={() => TCConsent.showPrivacyCenter()}>
           <Text style={styles.buttonText}>showPrivacyCenter</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -82,6 +90,16 @@ const ButtonRow = () => {
           style={styles.consentButton}
           onPress={TCConsent.useCustomPublisherRestrictions}>
           <Text style={styles.buttonText}>useCustomPublisherRestrictions</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.consentButton}
+          onPress={() => TCUserInstance.external_consent = mockConsent }>
+          <Text style={styles.buttonText}>Set external consent</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.consentButton}
+          onPress={() => TCUserInstance.consent_vendors = mockVendorConsent }>
+          <Text style={styles.buttonText}>Set external vendors consent</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.consentButton}
