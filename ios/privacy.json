@@ -1,7 +1,7 @@
 {
   "information": {
     "update": "2023-09-05",
-    "version": "003",
+    "version": "004",
     "vendors": "50,39,264,272,793,23,12,285,416,755,755,755,278,79,184,915,71,21,32,25,790,156,284",
     "google_vendors": "2687,2695,2830",
     "consentDurationInMonths": 6,
@@ -151,5 +151,94 @@
       "title_purpose": "Autres usages",
       "title_vendors": "Autres solutions"
     }
-  }
-}
+  },
+  "vendors_fr": [{
+      "name": "Commanders Act",
+      "ID": "1",
+      "description": "Permettre à Commanders Act d'envoyer des informations",
+      "privacy_policy": "http://commandersact.com/privacypolicy"
+    },
+    {
+      "name": "Autre Vendors",
+      "ID": "2",
+      "description": "Permettre à cet autre vendor d'envoyer pleins d'informations",
+      "privacy_policy": "http://anothervendor.free.fr/privacypolicy"
+    }
+  ],
+  "vendors": [{
+      "name": "Commanders Act",
+      "ID": "1",
+      "description": "Permettre à Commanders Act d'envoyer des informations",
+      "privacy_policy": "http://commandersact.com/privacypolicy"
+    },
+    {
+      "name": "Autre Vendors",
+      "ID": "2",
+      "description": "Permettre à cet autre vendor d'envoyer pleins d'informations",
+      "privacy_policy": "http://anothervendor.free.fr/privacypolicy"
+    }
+  ],
+  "categories": [{
+      "related_vendors": [1],
+      "name": "Statistics",
+      "ID": "1",
+      "description": "These cookies allow us analyze user behavior on the site, measure and improve performance and the quality of our service."
+    },
+    {
+      "related_vendors": [2],
+      "name": "Advertising",
+      "ID": "2",
+      "description": "These cookies allow us display adverts matching your interests on the websites you visit."
+    },
+    {
+      "related_vendors": [],
+      "name": "cat with sub cat",
+      "ID": "3",
+      "description": "Here you can select the vendors.",
+      "subcategories": [{
+          "name": "sub1",
+          "ID": "4",
+          "description": "We need this.",
+          "related_vendors": [1]
+        },
+        {
+          "name": "sub2",
+          "ID": "5",
+          "description": "We also might need this.",
+          "related_vendors": [2]
+        }
+      ]
+    }
+  ],
+  "categories_fr": [{
+      "related_vendors": [1],
+      "name": "Statistics",
+      "ID": "1",
+      "description": "These cookies allow us analyze user behavior on the site, measure and improve performance and the quality of our service."
+    },
+    {
+      "related_vendors": [2],
+      "name": "Advertising",
+      "ID": "2",
+      "description": "These cookies allow us display adverts matching your interests on the websites you visit."
+    },
+    {
+      "related_vendors": [],
+      "name": "cat with sub cat",
+      "ID": "3",
+      "description": "Here you can select the vendors.",
+      "subcategories": [{
+          "name": "sub1",
+          "ID": "4",
+          "description": "We need this.",
+          "related_vendors": [1]
+        },
+        {
+          "name": "sub2",
+          "ID": "5",
+          "description": "We also might need this.",
+          "related_vendors": [2]
+        }
+      ]
+    }
+  ]}
