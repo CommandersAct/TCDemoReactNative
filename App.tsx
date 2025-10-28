@@ -31,8 +31,8 @@ export default function App() {
 
 async function initialize()
 {
-  TCConsent.setSiteIDPrivacyID(3311, 2929)
-  TCServerSide.initServerSide(3311, 'a_source_key')
+  await TCServerSide.initServerSide(1111, 'a_source_key')
+  await TCConsent.setSiteIDPrivacyID(1111, 2222)
 }
 
 function printTCUser()
@@ -56,6 +56,13 @@ const ButtonRow = () => {
           style={styles.button}
           onPress={printValues}>
           <Text style={styles.buttonText}>Print values</Text>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity
+          style={styles.button}
+          onPress={setCustomValues}>
+          <Text style={styles.buttonText}>Set Custom values</Text>
         </TouchableOpacity>
 
 
@@ -255,6 +262,11 @@ function executeEvent()
   TCServerSide.execute(event)
 }
 
+function setCustomValues()
+{
+    TCDeviceInstance.sdkID = "custom-sdkID-set-by-user1234567890"
+    TCUserInstance.anonymous_id= "custom-anonymous_id-set-by-user1234567890"
+}
 function printValues()
 {
 
