@@ -12,7 +12,7 @@
     "RNImagePreview": "https://github.com/GantMan/RNImagePreview.git#master",
     "@commandersact/tccore-react-native": "git+https://github.com/commandersact/tccore-react-native#1.2.8",
     "@commandersact/tcserverside-react-native": "git+https://github.com/commandersact/tcserverside-react-native#1.2.7",
-    "@commandersact/tcconsent-react-native": "git+https://github.com/commandersact/tcconsent-react-native#1.3.10-non-IAB"
+    "@commandersact/tcconsent-react-native": "git+https://github.com/commandersact/tcconsent-react-native#1.3.12-non-IAB"
   },
   "devDependencies": {
     "metro-config": "^0.78.1",

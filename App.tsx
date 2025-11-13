@@ -32,7 +32,7 @@ export default function App() {
 async function initialize()
 {
   await TCServerSide.initServerSide(1111, 'a_source_key')
-  await TCConsent.setSiteIDPrivacyID(1111, 2222)
+  await TCConsent.customPCMSetSiteID(1111, 2222)
 }
 
 function printTCUser()
@@ -266,6 +266,7 @@ function setCustomValues()
 {
     TCDeviceInstance.sdkID = "custom-sdkID-set-by-user1234567890"
     TCUserInstance.anonymous_id= "custom-anonymous_id-set-by-user1234567890"
+    TCUserInstance.consentID = "custom-consent-ID-set-by-user1234567890"
 }
 function printValues()
 {
@@ -297,7 +298,6 @@ function printValues()
 
   console.log(TCUserInstance.consentID)
   console.log(TCUserInstance.anonymous_id)
-
 }
 
 function setAdditionalValues()
