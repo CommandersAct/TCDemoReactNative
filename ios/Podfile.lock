@@ -73,7 +73,7 @@ PODS:
   - hermes-engine (0.72.12):
     - hermes-engine/Pre-built (= 0.72.12)
   - hermes-engine/Pre-built (0.72.12)
-  - IOSV5-TCCore (5.4.1)
+  - IOSV5-TCCore (5.4.3)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
@@ -487,30 +487,33 @@ PODS:
     - React-logger (= 0.72.12)
     - React-perflogger (= 0.72.12)
   - SocketRocket (0.6.1)
-  - TCConsent (5.3.5)
-  - tcconsent-react-native (1.3.8):
-    - IOSV5-TCCore (= 5.4.1)
+  - TCConsent (5.3.7)
+  - tcconsent-react-native (1.3.13):
+    - IOSV5-TCCore (= 5.4.3)
     - React-Core
-    - TCConsent (= 5.3.5)
-  - tcconsent-react-native-swift (1.3.8):
-    - IOSV5-TCCore (= 5.4.1)
-    - TCConsent (= 5.3.5)
+    - TCConsent (= 5.3.7)
+    - TCIAB (= 5.2.0)
+  - tcconsent-react-native-swift (1.3.13):
+    - IOSV5-TCCore (= 5.4.3)
+    - TCConsent (= 5.3.7)
     - tcconsent-react-native
-  - tccore-react-native (1.2.6):
-    - IOSV5-TCCore (= 5.4.1)
+    - TCIAB (= 5.2.0)
+  - tccore-react-native (1.2.8):
+    - IOSV5-TCCore (= 5.4.3)
     - React-Core
-  - tccore-react-native-swift (1.2.6):
-    - IOSV5-TCCore (= 5.4.1)
+  - tccore-react-native-swift (1.2.8):
+    - IOSV5-TCCore (= 5.4.3)
     - tccore-react-native
-  - tcserverside-react-native (1.2.5):
-    - IOSV5-TCCore (= 5.4.1)
+  - TCIAB (5.2.0)
+  - tcserverside-react-native (1.2.7):
+    - IOSV5-TCCore (= 5.4.3)
     - React-Core
-    - TCServerSide_noIDFA (= 5.4.4)
-  - tcserverside-react-native-swift (1.2.5):
-    - IOSV5-TCCore (= 5.4.1)
+    - TCServerSide_noIDFA (= 5.4.5)
+  - tcserverside-react-native-swift (1.2.7):
+    - IOSV5-TCCore (= 5.4.3)
     - tcserverside-react-native
-    - TCServerSide_noIDFA (= 5.4.4)
-  - TCServerSide_noIDFA (5.4.4)
+    - TCServerSide_noIDFA (= 5.4.5)
+  - TCServerSide_noIDFA (5.4.5)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -603,6 +606,7 @@ SPEC REPOS:
     - OpenSSL-Universal
     - SocketRocket
     - TCConsent
+    - TCIAB
     - TCServerSide_noIDFA
     - YogaKit
 
@@ -715,7 +719,7 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: e89344b9e9e54351c3c5cac075e0275148fb37ba
-  IOSV5-TCCore: 3cc6b6d73bf951daea23b371e914783b5b07a73b
+  IOSV5-TCCore: 3cc4246925f64000c3c4e3be5862d090d1e8ac9f
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
@@ -751,17 +755,18 @@ SPEC CHECKSUMS:
   React-utils: 9a24cb88f950d1020ee55bddacbc8c16a611e2dc
   ReactCommon: 76843a9bb140596351ac2786257ac9fe60cafabb
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  TCConsent: a45c08c0320c3679de0b119567acd6039d970407
-  tcconsent-react-native: d0fa6e6ee85c8a054749506b7225092feb812744
-  tcconsent-react-native-swift: fe8101b0ef8bd980e6c4d9a841c699dbade7f53e
-  tccore-react-native: 5a95991809d34d1079449f0716936e9dc43e4af3
-  tccore-react-native-swift: d6dccebe0c582838a20e6b1ef44ff30b16dabc6c
-  tcserverside-react-native: 52c251ea96107659e73a4b993cf7da24a4b203da
-  tcserverside-react-native-swift: 8671ddeef294c0dcbb941f8bc4701a786d2828a6
-  TCServerSide_noIDFA: c44558f9a679a185c2d82859f4d1b8f09495ccc6
+  TCConsent: e945a0abb5b82bef85b19839f87e19e57f02b2d3
+  tcconsent-react-native: f4593d9fccfa9f0c29a9103dd13e814b20ff04e0
+  tcconsent-react-native-swift: 23321a1901f5555ff0566f8d49815ec58843064f
+  tccore-react-native: 72358e1c30083fe2d8f629a5f5a4024947612980
+  tccore-react-native-swift: 46623de7c721ef6f0e3e37ffbaf68718cd85020a
+  TCIAB: 3e5224744a2e5855321c21ee1478588ddda7ba41
+  tcserverside-react-native: d8387963413a0b84a6e4ca9e80b10f15d0ea1f8a
+  tcserverside-react-native-swift: 289fb462f1628bfcb1cdadac1e69201ac7c7a7e3
+  TCServerSide_noIDFA: 3ecff545cf26411ea5d13e6a47d967dd1426b640
   Yoga: 87e59f6d458e5061d2421086c5de994b3f7cd151
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 91a666166c17dbc61ac418fb8a53d0e017d78152
+PODFILE CHECKSUM: 4c06f9b373c14af980691b3e606faaec9962a65a
 
 COCOAPODS: 1.16.2

@@ -32,7 +32,7 @@ export default function App() {
 async function initialize()
 {
   await TCServerSide.initServerSide(1111, 'a_source_key')
-  await TCConsent.customPCMSetSiteID(1111, 2222)
+  await TCConsent.setSiteIDPrivacyID(1111, 2222)
 }
 
 function printTCUser()
