@@ -1,52 +1,50 @@
+# Welcome to your Expo app 👋
 
-# Read Me : 
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-This is a demo app for implementing commandersAct's react-native bridges
+## Get started
 
-* [TCCore](https://github.com/CommandersAct/tccore-react-native)
-* [TCServerSide](https://github.com/CommandersAct/tcserverside-react-native)
-* [TCConsent](https://github.com/CommandersAct/tcconsent-react-native)
+1. Install dependencies
 
+   ```bash
+   npm install
+   ```
 
-Main code is inside ./App.tsx file
+2. Start the app
 
-More importantly, you'll need to read the native documentation for full details.
- * [Android](https://github.com/CommandersAct/Androidv5)
- * [iOS](https://github.com/commandersact/iosv5)
+   ```bash
+   npx expo start
+   ```
 
-Initialization is done once the app is loaded : 
+In the output, you'll find options to open the app in a
 
-```js
-// App.tsx file :
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-export default function App() {
-  initialize() // we call initialization for both TCServerSide and TCConsent bridges
-  return (
-    <View style={styles.appContainer}>
-      <ButtonRow />
-    </View>
-  );
-}
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-async function initialize()
-{
-    // Check with your consultant or in your platform for the siteID, privacyID for TCConsent,
-    // and for your TCServerSide's sourceKey
+## Get a fresh project
 
-  TCConsent.setSiteIDPrivacyID(3311, 2929)
-  TCServerSide.initServerSide(3311, 'a_source_key')
-}
+When you're ready, run:
 
+```bash
+npm run reset-project
 ```
-App will display a list of button, each one of them will invoke a ServerSide/TCConsent method, you will need to keep an eye on android studio logcat / xcode console / react-native console for displayed logs. 
 
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-# Support & Contact : 
+## Learn more
 
-Support : support@commandersact.com
+To learn more about developing your project with Expo, look at the following resources:
 
-http://www.commandersact.com
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-Commanders Act | 7b rue taylor - 75010 PARIS - France
+## Join the community
 
-![Commanders Act logo](res/ca_logo.png)
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
