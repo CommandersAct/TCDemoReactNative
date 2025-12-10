@@ -1,48 +1,38 @@
-import * as React from 'react';
-import { StyleSheet, ScrollView, TouchableOpacity, Text, View } from 'react-native';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
+
+import { StatusBar, useColorScheme, StyleSheet, ScrollView, TouchableOpacity, Text, View } from 'react-native';
 import * as TCServerSide from '@commandersact/tcserverside-react-native';
 import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from '@commandersact/tcserverside-react-native';
 import {TCUserInstance} from "@commandersact/tccore-react-native";
 import * as TCConsent from '@commandersact/tcconsent-react-native';
-import { TCUser } from '@commandersact/tccore-react-native/src/TCUser';
 
-let mockConsent: { [key: string]: string } = {
-  'PRIVACY_CAT_1': '1',
-  'PRIVACY_CAT_2': '1',
-  'PRIVACY_CAT_3': '0',
-  'PRIVACY_VEN_1': '0',
-};
+import {
+  SafeAreaProvider,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
 
+function App() {
+  const isDarkMode = useColorScheme() === 'dark';
 
-let mockVendorConsent: { [key: string]: string } = {
-  'PRIVACY_VEN_1': '0',
-  'PRIVACY_VEN_2': '1',
-  'PRIVACY_VEN_3': '0',
-};
-
-export default function App() {
-  initialize()
   return (
-    <View style={styles.appContainer}>
-      <ButtonRow />
-    </View>
+    <SafeAreaProvider>
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <AppContent />
+    </SafeAreaProvider>
   );
 }
 
-async function initialize()
-{
-  await TCServerSide.initServerSide(1111, 'a_source_key')
-  await TCConsent.setSiteIDPrivacyID(1111, 2222)
-}
-
-function printTCUser()
-{
-  console.log(TCUserInstance.anonymous_id)
-}
-
-const ButtonRow = () => {
+function AppContent() {
+  const safeAreaInsets = useSafeAreaInsets();
+  initialize()
 
   return (
+
     <ScrollView>
        <View style={styles.container}>
 
@@ -207,7 +197,54 @@ const ButtonRow = () => {
         </TouchableOpacity>
       </View>
     </ScrollView>
-);
+  );
+}
+
+const styles = StyleSheet.create({
+  appContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  container: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 8,
+    marginTop: 64
+  },
+  button: {
+    backgroundColor: 'blue',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    marginVertical: 10,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+  },
+  consentButton: {
+    backgroundColor: 'purple',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    marginVertical: 10,
+  },
+});
+
+let mockConsent: { [key: string]: string } = {
+  'PRIVACY_CAT_1': '1',
+  'PRIVACY_CAT_2': '1',
+  'PRIVACY_CAT_3': '0',
+  'PRIVACY_VEN_1': '0',
+};
+
+
+let mockVendorConsent: { [key: string]: string } = {
+  'PRIVACY_VEN_1': '0',
+  'PRIVACY_VEN_2': '1',
+  'PRIVACY_VEN_3': '0',
 };
 
 function executeEvent()
@@ -353,35 +390,10 @@ function removeAdditionalValues()
   TCUserInstance.removeAdditionalProperty("additional_list_string")
 }
 
-const styles = StyleSheet.create({
-  appContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  container: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin: 8,
-    marginTop: 64
-  },
-  button: {
-    backgroundColor: 'blue',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    marginVertical: 10,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-  },
-  consentButton: {
-    backgroundColor: 'purple',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    marginVertical: 10,
-  },
-});
+async function initialize()
+{
+  await TCServerSide.initServerSide(1111, 'a_source_key')
+  await TCConsent.setSiteIDPrivacyID(1111, 2222)
+}
+
+export default App;
