@@ -12,10 +12,10 @@
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E09A1C863C0FEE1FDC5BE3BE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		EB127B852EE97B4C00CA3C67 /* google-atp-list.json in Resources */ = {isa = PBXBuildFile; fileRef = EB127B782EE97B4C00CA3C67 /* google-atp-list.json */; };
-		EB127B862EE97B4C00CA3C67 /* vendor-list.json in Resources */ = {isa = PBXBuildFile; fileRef = EB127B7B2EE97B4C00CA3C67 /* vendor-list.json */; };
-		EB127B872EE97B4C00CA3C67 /* privacy.json in Resources */ = {isa = PBXBuildFile; fileRef = EB127B792EE97B4C00CA3C67 /* privacy.json */; };
-		EB127B882EE97B4C00CA3C67 /* purposes-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = EB127B7A2EE97B4C00CA3C67 /* purposes-fr.json */; };
+		EB8078F72EE98B89005A0F13 /* privacy.json in Resources */ = {isa = PBXBuildFile; fileRef = EB8078F42EE98B89005A0F13 /* privacy.json */; };
+		EB8078F82EE98B89005A0F13 /* purposes-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = EB8078F52EE98B89005A0F13 /* purposes-fr.json */; };
+		EB8078F92EE98B89005A0F13 /* vendor-list.json in Resources */ = {isa = PBXBuildFile; fileRef = EB8078F62EE98B89005A0F13 /* vendor-list.json */; };
+		EB8078FA2EE98B89005A0F13 /* google-atp-list.json in Resources */ = {isa = PBXBuildFile; fileRef = EB8078F32EE98B89005A0F13 /* google-atp-list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-TCDemoReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCDemoReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TCDemoReactNative/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TCDemoReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EB127B782EE97B4C00CA3C67 /* google-atp-list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "google-atp-list.json"; path = "../../../TCDemoReactNative/ios/google-atp-list.json"; sourceTree = "<group>"; };
-		EB127B792EE97B4C00CA3C67 /* privacy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = privacy.json; path = ../../../TCDemoReactNative/ios/privacy.json; sourceTree = "<group>"; };
-		EB127B7A2EE97B4C00CA3C67 /* purposes-fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "purposes-fr.json"; path = "../../../TCDemoReactNative/ios/purposes-fr.json"; sourceTree = "<group>"; };
-		EB127B7B2EE97B4C00CA3C67 /* vendor-list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "vendor-list.json"; path = "../../../TCDemoReactNative/ios/vendor-list.json"; sourceTree = "<group>"; };
+		EB8078F32EE98B89005A0F13 /* google-atp-list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "google-atp-list.json"; sourceTree = "<group>"; };
+		EB8078F42EE98B89005A0F13 /* privacy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = privacy.json; sourceTree = "<group>"; };
+		EB8078F52EE98B89005A0F13 /* purposes-fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "purposes-fr.json"; sourceTree = "<group>"; };
+		EB8078F62EE98B89005A0F13 /* vendor-list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "vendor-list.json"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -55,10 +55,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
-				EB127B782EE97B4C00CA3C67 /* google-atp-list.json */,
-				EB127B792EE97B4C00CA3C67 /* privacy.json */,
-				EB127B7A2EE97B4C00CA3C67 /* purposes-fr.json */,
-				EB127B7B2EE97B4C00CA3C67 /* vendor-list.json */,
+				EB8078F32EE98B89005A0F13 /* google-atp-list.json */,
+				EB8078F42EE98B89005A0F13 /* privacy.json */,
+				EB8078F52EE98B89005A0F13 /* purposes-fr.json */,
+				EB8078F62EE98B89005A0F13 /* vendor-list.json */,
 			);
 			name = TCDemoReactNative;
 			sourceTree = "<group>";
@@ -171,12 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				EB127B852EE97B4C00CA3C67 /* google-atp-list.json in Resources */,
-				EB127B862EE97B4C00CA3C67 /* vendor-list.json in Resources */,
-				EB127B872EE97B4C00CA3C67 /* privacy.json in Resources */,
-				EB127B882EE97B4C00CA3C67 /* purposes-fr.json in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				E09A1C863C0FEE1FDC5BE3BE /* PrivacyInfo.xcprivacy in Resources */,
+				EB8078F72EE98B89005A0F13 /* privacy.json in Resources */,
+				EB8078F82EE98B89005A0F13 /* purposes-fr.json in Resources */,
+				EB8078F92EE98B89005A0F13 /* vendor-list.json in Resources */,
+				EB8078FA2EE98B89005A0F13 /* google-atp-list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
