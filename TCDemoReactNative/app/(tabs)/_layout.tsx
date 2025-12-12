@@ -6,9 +6,8 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-import * as TCServerSide from '@commandersact/tcserverside-react-native';
-import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from '@commandersact/tcserverside-react-native';
-import {TCUserInstance} from "@commandersact/tccore-react-native";
+//import * as TCServerSide from '@commandersact/tcserverside-react-native';
+//import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from '@commandersact/tcserverside-react-native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
