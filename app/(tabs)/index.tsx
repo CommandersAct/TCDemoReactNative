@@ -67,23 +67,6 @@ export default function HomeScreen() {
             onPress={() => TCUserInstance.consent_vendors = mockVendorConsent}>
             <Text style={styles.buttonText}>Set external vendors consent</Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.consentButton}
-            onPress={() => TCConsent.saveConsentFromPopUp(mockConsent)}>
-            <Text style={styles.buttonText}>saveConsentFromPopUp</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.consentButton}
-            onPress={() => TCConsent.saveConsent(mockConsent)}>
-            <Text style={styles.buttonText}>saveConsent</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.consentButton}
-            onPress={() => TCConsent.saveConsentFromConsentSourceWithPrivacyAction(mockConsent, TCConsent.ETCConsentSource.POP_UP, TCConsent.ETCConsentAction.SAVE)}>
-            <Text style={styles.buttonText}>saveConsentFromConsentSourceWithPrivacyAction</Text>
-          </TouchableOpacity>
-
 
           <TouchableOpacity
             style={styles.consentButton}
