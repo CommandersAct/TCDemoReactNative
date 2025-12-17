@@ -5,7 +5,7 @@
  * @format
  */
 
-import { StatusBar, useColorScheme, StyleSheet, ScrollView, TouchableOpacity, Text, View } from 'react-native';
+import { NativeModules, Platform, StatusBar, useColorScheme, StyleSheet, ScrollView, TouchableOpacity, Text, View } from 'react-native';
 import * as TCServerSide from '@commandersact/tcserverside-react-native';
 import {TCAppInstance, TCDeviceInstance, TCBeginCheckoutEvent, TCItem, TCProduct} from '@commandersact/tcserverside-react-native';
 import {TCUserInstance} from "@commandersact/tccore-react-native";
