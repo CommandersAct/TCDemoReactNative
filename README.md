@@ -2,6 +2,7 @@
 # Read Me : 
 
 This is a demo app for implementing commandersAct's react-native bridges
+This app is a bare React-native App, for Expo app please check [expo-app](https://github.com/CommandersAct/TCDemoReactNative) branch.
 
 * [TCCore](https://github.com/CommandersAct/tccore-react-native)
 * [TCServerSide](https://github.com/CommandersAct/tcserverside-react-native)
